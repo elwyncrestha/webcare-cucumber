@@ -15,16 +15,15 @@ public class UserAuthenticationStepDefs {
 
     private ChromeDriver chromeDriver;
 
-    @Given("I am opening dashboard using direct url")
-    public void iAmOpeningDashboardUsingDirectUrl() {
+    @Given("I am not authenticated")
+    public void iAmNotAuthenticated() {
         System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
         chromeDriver = new ChromeDriver();
-        chromeDriver.get(DASHBOARD_URL);
     }
 
-    @When("I am not authenticated")
-    public void iAmNotAuthenticated() {
-        System.out.println("Have not accessed login page");
+    @When("I am opening dashboard using direct url")
+    public void iAmOpeningDashboardUsingDirectUrl() {
+        chromeDriver.get(DASHBOARD_URL);
     }
 
     @Then("I should be redirected to login for authentication")
@@ -33,5 +32,6 @@ public class UserAuthenticationStepDefs {
         wait.until(ExpectedConditions.urlToBe(LOGIN_PAGE_URL));
         String currentUrl = chromeDriver.getCurrentUrl();
         Assert.assertEquals(LOGIN_PAGE_URL, currentUrl);
+        chromeDriver.close();
     }
 }
