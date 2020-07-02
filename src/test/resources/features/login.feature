@@ -1,4 +1,4 @@
-Feature: User Authentication and Login
+Feature: User Login
   This feature file checks the user authentication via login form.
 
   Scenario: Test invalid login
