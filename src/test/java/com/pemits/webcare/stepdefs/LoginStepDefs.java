@@ -40,7 +40,7 @@ public class LoginStepDefs {
         WebDriverWait wait = new WebDriverWait(loginPage.getWebDriver(), 5);
         wait.until(ExpectedConditions.visibilityOf(loginPage.getErrorDiv()));
         String currentUrl = loginPage.getWebDriver().getCurrentUrl();
-        Assert.assertNotEquals(currentUrl, DASHBOARD_URL);
+        Assert.assertNotEquals(DASHBOARD_URL, currentUrl);
         loginPage.getWebDriver().close();
     }
 
@@ -56,7 +56,7 @@ public class LoginStepDefs {
         WebDriverWait wait = new WebDriverWait(loginPage.getWebDriver(), 5);
         wait.until(ExpectedConditions.urlToBe(DASHBOARD_URL));
         String currentUrl = loginPage.getWebDriver().getCurrentUrl();
-        Assert.assertEquals(currentUrl, DASHBOARD_URL);
+        Assert.assertEquals(DASHBOARD_URL, currentUrl);
         loginPage.getWebDriver().close();
     }
 }
