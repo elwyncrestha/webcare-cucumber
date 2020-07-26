@@ -10,7 +10,8 @@ public class PagesUrl {
     public static final String FEATURE_URL = BASE_URL + "/feature";
     public static final String DASHBOARD_URL = FEATURE_URL + "/dashboard";
     public static final String DEPARTMENT_COMPONENT_URL = FEATURE_URL + "/departments";
-    public static final String DOCTOR_COMPONENT_URL = FEATURE_URL + "/departments";
+    public static final String DOCTOR_COMPONENT_URL = FEATURE_URL + "/users/doctor";
+    public static final String PATIENT_COMPONENT_URL = FEATURE_URL + "/users/patient";
 
     private PagesUrl() {}
 }
