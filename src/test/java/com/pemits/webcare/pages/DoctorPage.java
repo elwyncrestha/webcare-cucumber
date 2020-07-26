@@ -12,6 +12,15 @@ public class DoctorPage {
     @FindBy(id = "paginationLabel")
     private WebElement wePaginationLabel;
 
+    @FindBy(id = "btnFilter")
+    private WebElement weBtnFilter;
+
+    @FindBy(id = "name")
+    private WebElement weName;
+
+    @FindBy(id = "btnFilterSearch")
+    private WebElement weBtnFilterSearch;
+
     public DoctorPage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(this.webDriver, this);
@@ -23,5 +32,17 @@ public class DoctorPage {
 
     public WebElement getWePaginationLabel() {
         return wePaginationLabel;
+    }
+
+    public WebElement getWeBtnFilter() {
+        return weBtnFilter;
+    }
+
+    public WebElement getWeName() {
+        return weName;
+    }
+
+    public WebElement getWeBtnFilterSearch() {
+        return weBtnFilterSearch;
     }
 }
