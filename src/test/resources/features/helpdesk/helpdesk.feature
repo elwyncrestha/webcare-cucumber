@@ -1,4 +1,4 @@
-Feature: Online help desk query
+Feature: Online Help Desk Query
   This feature file checks the help desk component to add a new query.
 
   Scenario: Test help desk component to add a new query

@@ -27,6 +27,9 @@ public class LoginPage {
     @FindBy(id = "btnGetHelp")
     private WebElement weBtnGetHelp;
 
+    @FindBy(id = "btnFeedback")
+    private WebElement weBtnFeedback;
+
     public LoginPage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(this.webDriver, this);
@@ -56,4 +59,7 @@ public class LoginPage {
         return weBtnGetHelp;
     }
 
+    public WebElement getWeBtnFeedback() {
+        return weBtnFeedback;
+    }
 }
