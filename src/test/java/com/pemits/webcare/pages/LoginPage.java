@@ -24,6 +24,9 @@ public class LoginPage {
     @FindBy(className = "alert-danger")
     private WebElement weErrorDiv;
 
+    @FindBy(id = "btnGetHelp")
+    private WebElement weBtnGetHelp;
+
     public LoginPage(WebDriver webDriver) {
         this.webDriver = webDriver;
         PageFactory.initElements(this.webDriver, this);
@@ -47,6 +50,10 @@ public class LoginPage {
 
     public WebElement getErrorDiv() {
         return weErrorDiv;
+    }
+
+    public WebElement getWeBtnGetHelp() {
+        return weBtnGetHelp;
     }
 
 }
