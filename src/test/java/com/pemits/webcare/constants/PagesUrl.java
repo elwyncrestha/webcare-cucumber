@@ -15,6 +15,7 @@ public class PagesUrl {
     public static final String NOTIFICATION_COMPONENT_URL = FEATURE_URL + "/notification";
     public static final String PROFILE_COMPONENT_URL = FEATURE_URL + "/profile";
     public static final String HELP_DESK_COMPONENT_URL = BASE_URL + "/portal/user-query";
+    public static final String FEEDBACK_COMPONENT_URL = BASE_URL + "/portal/feedback";
 
     private PagesUrl() {}
 }
