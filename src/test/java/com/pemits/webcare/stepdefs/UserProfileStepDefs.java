@@ -1,7 +1,6 @@
 package com.pemits.webcare.stepdefs;
 
 import static com.pemits.webcare.constants.PagesUrl.DASHBOARD_URL;
-import static com.pemits.webcare.constants.PagesUrl.DEPARTMENT_COMPONENT_URL;
 import static com.pemits.webcare.constants.PagesUrl.LOGIN_PAGE_URL;
 import static com.pemits.webcare.constants.PagesUrl.PROFILE_COMPONENT_URL;
 
@@ -9,7 +8,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,7 +15,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pemits.webcare.pages.LoginPage;
 import com.pemits.webcare.pages.ProfilePage;
-import sun.plugin.util.UserProfile;
 
 public class UserProfileStepDefs {
 
